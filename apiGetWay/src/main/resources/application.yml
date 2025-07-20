@@ -3,8 +3,13 @@ spring:
     gateway:
       routes:
         - id: test
-          url: "http://localhost/api"
+          uri: "http://localhost/api"
           predicates:
             - Path =/**
           filters:
             - AddRequestHeader=X-G_HEADER, red
+
+eureka:
+  client:
+    enabled: true
+  
