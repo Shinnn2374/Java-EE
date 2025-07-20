@@ -10,7 +10,9 @@ public class CustomGlobalFilter implements Ordered, GlobalFilter {
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain){
-        return null;
+        System.out.println(exchange.getRequest().getPath());
+
+        return chain.filter(exchange);
     }
 
     @Override
