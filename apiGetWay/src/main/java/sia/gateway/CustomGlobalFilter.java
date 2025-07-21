@@ -1,4 +1,4 @@
-package sia.apiGetWay;
+package sia.gateway;
 
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.core.Ordered;

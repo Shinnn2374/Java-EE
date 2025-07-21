@@ -14,3 +14,4 @@ eureka:
     enabled: true
     service-url:
       defaultZone: http://localhost:8112/eureka/
+
